@@ -359,3 +359,89 @@ a {
         flex-basis: 32%;
     }
 }
+
+
+/* ------------------------------------ */
+
+
+/* Start Draft */
+
+.mini-cont .draft {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.mini-cont .draft .top {
+    padding: 20px;
+}
+.mini-cont .draft .top h2 {
+    margin: 0;
+}
+.mini-cont .draft .top p {
+    margin: 0;
+    margin-top: 10px;
+}
+.mini-cont .draft form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 0;
+}
+.mini-cont .draft form input {
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #EEEEEE;
+    padding: 10px 5px;
+    font-size: small;
+    margin-bottom: 20px;
+}
+.mini-cont .draft form textarea {
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #EEEEEE;
+    padding: 10px 5px;
+    font-size: small;
+}
+.mini-cont .draft .footer {
+    position: relative;
+    padding: 20px;
+    padding-top: 0 ;
+    display: flex;
+    justify-content: end;
+}
+.mini-cont .draft .footer a {
+    position: relative;
+    color: white;
+    background-color: #0075FF;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+@media (max-width:500px) {
+    .draft {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .draft .top {
+        justify-content: center !important;
+        padding-bottom: 30px !important;
+    }
+}
+@media (min-width:500px) and (max-width:1170px) {
+    .draft {
+        flex-basis: 100%;
+    }
+}
+@media (min-width:1170px) and (max-width:1650px) {
+    .draft {
+        flex-basis: calc(50% - 20px);
+    }
+}
+@media (min-width:1650px) {
+    .draft {
+        flex-basis: 32%;
+    }
+}
