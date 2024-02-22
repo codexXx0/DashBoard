@@ -12,6 +12,37 @@ body {
     --txt-bgc: #EEEEEE ;
     --main-trans: 0.5s ease ;
 }
+.container {
+    position: relative;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+.mini-cont {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px;
+    height: calc(100% - 110px);
+    gap: 20px;
+}
+.mini-cont h1 {
+    margin-top: 0;
+    position: relative;
+    align-self: flex-start;
+    flex-basis: 100%;
+}
+.mini-cont h1 span {
+    margin-top: 0;
+    position: relative;
+}
+.mini-cont h1::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 140px;
+    bottom: -8px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(255,255,255,1) 35%, rgba(255,255,255,1) 100%);}
 ul {
     padding: 0;
     margin: 0;
@@ -33,6 +64,8 @@ a {
 .main {
     position: relative;
     background-color: #F1F5F9;
+    display: flex;
+    /* flex-wrap: wrap; */
 }
 /* ------------------------------------ */
 
@@ -42,11 +75,13 @@ a {
 
 .sidebar {
     position: relative;
-    height: 100%;
     width: 250px;
+    min-width: 170px;
     box-sizing: border-box;
     box-shadow: 0px -10px 15px rgba(107, 107, 107, 0.24) ;
     background-color: rgb(255, 255, 255);
+    transition: var(--main-trans);
+    z-index: 1;
 }
 .sidebar .head {
     position: relative;
@@ -85,25 +120,25 @@ a {
     padding: 10px;
 }
 .sidebar ul li {
-    background-color: rgb(255, 255, 255);
     transition: var(--main-trans);
     border-radius: 6px;
     font-size: 15px;
 }
 .sidebar ul li a {
     position: relative;
-    padding: 10px;
+    padding: 15px 10px;
     display: block;
-    margin: 10px 10px;
+    margin: 5px 10px;
     border-radius: 6px;
     text-align: left;
+    transition: var(--main-trans);
 }
 .sidebar ul li a i {
     position: relative;
     padding-right: 5px;
     width: 20px;
 }
-.sidebar ul li:hover ,
+.sidebar ul li a:hover ,
 .sidebar ul li a.active {
     background-color: #F6F6F6 ;
 }
@@ -111,6 +146,7 @@ a {
     .sidebar {
         width: fit-content;
         text-align: center;
+        min-width: fit-content;
     }
     .sidebar .head {
         font-size: 15px;
@@ -149,3 +185,157 @@ a {
 
 
 
+/* Start Header */
+
+
+.header {
+    position: relative;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    flex: 1;
+    background-color: white;
+    width: 100%;
+}
+.header form {
+    display: flex;
+    margin: 15px;
+    border: 1px solid #77777762 ;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+.header form i {
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 5px;
+    color: rgba(0, 0, 0, 0.658);
+}
+.header form input {
+    border: none;
+    outline: none;
+    padding: 0px;
+    width: 110px;
+    font-size: small;
+    transition: var(--main-trans);
+}
+.header form input[type=search]::placeholder {
+    color: rgba(0, 0, 0, 0.658);
+}
+.header form input[type=search]:focus {
+    width: 150px ;
+}
+.header form input[type=search]:focus::placeholder  {
+    color: white;
+}
+.header img {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 10px;
+}
+.header .prof {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.header .prof i {
+    position: relative;
+    font-size: 21px;
+}
+.header .prof i::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+
+/* ------------------------------------ */
+
+
+/* Start Welcome */
+
+
+.mini-cont .welcome {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+.mini-cont .welcome .top {
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.mini-cont .welcome .top .txt h2 {
+    margin-bottom: 0;
+}
+.mini-cont .welcome .top .txt p {
+    margin-top: 10px;
+}
+.mini-cont .welcome .top img {
+    width: 200px;
+}
+.mini-cont .welcome .bottom .img {
+    position: relative;
+    width: 100%;
+}
+.mini-cont .welcome .bottom img {
+    position: relative;
+    max-width: 64px;
+    top: -32px;
+    left: 20px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(194, 194, 194);
+}
+.mini-cont .welcome .bottom .txt {
+    position: relative;
+    padding: 20px 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(0, 0, 0, 0.123);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.123);
+}
+.mini-cont .welcome .bottom .txt h4 {
+    margin-bottom: 0;
+}
+.mini-cont .welcome .bottom .txt p {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.61);
+}
+.mini-cont .welcome .footer {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+.mini-cont .welcome .footer a {
+    position: relative;
+    color: white;
+    background-color: #0075FF;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+@media (max-width:1170px) {
+    .welcome {
+        flex-basis: 100%;
+    }
+}
+@media (min-width:1170px) and (max-width:1650px) {
+    .welcome {
+        flex-basis: calc(50% - 20px);
+    }
+}
+@media (min-width:1650px) {
+    .welcome {
+        flex-basis: 32%;
+    }
+}
