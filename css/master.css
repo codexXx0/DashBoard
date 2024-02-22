@@ -324,7 +324,26 @@ a {
     border-radius: 6px;
     font-size: 15px;
 }
-@media (max-width:1170px) {
+@media (max-width:500px) {
+    .welcome {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .welcome .top {
+        justify-content: center !important;
+        padding-bottom: 30px !important;
+    }
+    .welcome .top img {
+        display: none;
+    }
+    .welcome .bottom img {
+        left: 0px !important;
+    }
+    .welcome .bottom .txt {
+        flex-direction: column;
+    }
+}
+@media (min-width:500px) and (max-width:1170px) {
     .welcome {
         flex-basis: 100%;
     }
