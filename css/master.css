@@ -232,6 +232,7 @@ a {
     max-width: 40px;
     max-height: 40px;
     margin: 10px;
+    border-radius: 50%;
 }
 .header .prof {
     display: flex;
