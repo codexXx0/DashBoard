@@ -610,3 +610,58 @@ a {
 .mini-cont .ticket .bottom .four i {
     color: #F44336;
 }
+
+
+/* ------------------------------------ */
+
+
+/* Start News */
+
+.mini-cont .news {
+    background-color: white;
+    position: relative;
+}
+.mini-cont .news .bottom {
+    margin: 20px;
+    margin-top: 0;
+}
+.mini-cont .news .bottom .boxs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.288);
+    padding-bottom: 10px;
+}
+.mini-cont .news .bottom .boxs img {
+    max-width: 100px;
+    max-height: 56px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+.mini-cont .news .bottom .boxs .txt {
+    flex: 1;
+}
+.mini-cont .news .bottom .boxs .txt h3{
+    margin-bottom: 0;
+}
+.mini-cont .news .bottom .boxs .txt p{
+    margin-top: 10px;
+    color: #777;
+    font-size: 14px;
+}
+.mini-cont .news .bottom .boxs .end {
+    background-color: #EEEEEE;
+    padding: 10px 5px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+@media (max-width:600px) {
+    .mini-cont .news .bottom .boxs {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px 0;
+        padding-bottom: 20px ;
+    }    
+    .mini-cont .news .bottom .boxs img {
+        margin-right: 0px;
+    }    
+}
