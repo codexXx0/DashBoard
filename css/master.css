@@ -15,7 +15,7 @@ body {
 .container {
     position: relative;
     flex: 1;
-    flex-wrap: nowrap;
+    max-width: calc(100% - 75px);
 }
 .mini-cont {
     position: relative;
@@ -106,7 +106,6 @@ a {
     position: relative;
     background-color: #F1F5F9;
     display: flex;
-    /* flex-wrap: wrap; */
 }
 /* ------------------------------------ */
 
