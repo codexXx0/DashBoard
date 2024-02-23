@@ -452,6 +452,7 @@ a {
 }
 .year .bottom .target .prog {
     flex: 1;
+    text-align: left;
 }
 .year .bottom .target .prog h4 {
     padding: 0;
@@ -481,7 +482,7 @@ a {
     background-color: #0075FF;
     padding: 5px;
     font-size: small;
-    top: -40px;
+    top: -35px;
     right: -15px;
     border-radius: 6px;
 }
@@ -489,7 +490,7 @@ a {
     position: absolute;
     content: "" ;
     background-color: #ffffff00;
-    top: -15px;
+    top: -10px;
     right: -3px;
     width: 0;
     border: 5px solid #0075FF;
@@ -540,4 +541,18 @@ a {
     border-bottom-color:transparent ;
     border-left-color:transparent ;
     border-right-color:transparent ;
+}
+@media (max-width:500px) {
+    .year .bottom .target .i {
+        position: relative;
+        max-width: 60px;
+        max-height: 60px;
+        background-color: #0077ff34;
+    }    
+    .year .bottom .target i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }    
 }
