@@ -734,3 +734,111 @@ a {
     border-bottom: none;
     margin: 0px 0;
 }
+
+
+/* ------------------------------------ */
+
+
+/* Start Items  */
+
+.items {
+    background-color: white;
+}
+.items .bottom {
+    margin: 20px;
+    margin-top: 0;
+}
+.items .bottom .boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.items .bottom .one {
+    margin-top: 20px;
+}
+.items .bottom .boxs .left {
+    color: rgb(133, 133, 133);
+}
+.items .bottom .boxs .right {
+    font-size: 13px;
+    padding: 5px 10px;
+    background-color: #EEEEEE;
+    border-radius: 6px;
+}
+.items .bottom .one .right {
+    color: rgb(133, 133, 133);
+    background-color: transparent;
+    font-size: 16px;
+    padding-right: 0;
+}
+
+
+/* ------------------------------------ */
+
+
+/* Start Uploads  */
+
+.upload {
+    background-color: white;
+}
+.upload .bottom .boxs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.upload .bottom .last {
+    border: none;
+}
+.upload .bottom .boxs img {
+    max-width: 40px;
+    margin-right: 15px;
+}
+.upload .bottom .boxs .txt {
+    flex: 1;
+}
+.upload .bottom .boxs .txt h4 {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.upload .bottom .boxs .txt p {
+    margin-top: 5px;
+    color: #999999;
+}
+.upload .bottom .boxs .end {
+    font-size: 14px;
+    background-color: #EEEEEE;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+/* ------------------------------------ */
+
+
+/* Start Progress  */
+
+.prog {
+    background-color: white;
+}
+.prog .bottom {
+    margin: 20px;
+    margin-top: 10px;
+}
+.prog  .bottom .boxs {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: large;
+}
+.prog .bottom .img {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.prog .bottom .img img {
+    max-width: 160px;
+    opacity: 0.14;
+}
