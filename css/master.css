@@ -584,6 +584,7 @@ a {
     border-radius: 6px;
     flex-basis: 47%;
     text-align: center;
+    padding: 15px 0;
 }
 .mini-cont .ticket .bottom .boxs i {
     padding: 10px;
@@ -610,12 +611,18 @@ a {
 .mini-cont .ticket .bottom .four i {
     color: #F44336;
 }
+@media (max-width:600px) {
+    .mini-cont .ticket .bottom .boxs {
+        flex-basis: 100%;
+    }
+}
 
 
 /* ------------------------------------ */
 
 
 /* Start News */
+
 
 .mini-cont .news {
     background-color: white;
@@ -630,6 +637,9 @@ a {
     align-items: center;
     border-bottom: 1px solid rgba(155, 155, 155, 0.288);
     padding-bottom: 10px;
+}
+.mini-cont .news .bottom .last {
+    border: none;
 }
 .mini-cont .news .bottom .boxs img {
     max-width: 100px;
@@ -653,6 +663,7 @@ a {
     padding: 10px 5px;
     border-radius: 6px;
     font-size: 14px;
+    cursor: pointer;
 }
 @media (max-width:600px) {
     .mini-cont .news .bottom .boxs {
@@ -664,4 +675,62 @@ a {
     .mini-cont .news .bottom .boxs img {
         margin-right: 0px;
     }    
+}
+
+
+/* ------------------------------------ */
+
+
+/* Start Tasks */
+
+.mini-cont .tasks {
+    background-color: white;
+}
+.mini-cont .tasks .bottom {
+    margin: 0 20px;
+}
+.mini-cont .tasks .bottom .boxs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.288);
+    margin: 0px 0;
+}
+.mini-cont .tasks .bottom .boxs .txt h4 {
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.mini-cont .tasks .bottom .boxs .txt p {
+    margin-top: 5px;
+    margin-bottom: 16px;
+    color: #777777e7;
+}
+.mini-cont .tasks .bottom .boxs i {
+    cursor: pointer;
+    transition: var(--main-trans);
+}
+.mini-cont .tasks .bottom .boxs i:hover {
+    color:#d43125;
+}
+.mini-cont .tasks .bottom .del .txt h4 {
+    margin-bottom: 0;
+    color: #77777754;
+}
+.mini-cont .tasks .bottom .del .txt p {
+    margin-top: 5px;
+    color: #77777754;
+}
+.mini-cont .tasks .bottom .del i {
+    cursor: pointer;
+    color: #77777788;
+}
+.mini-cont .tasks .bottom .del i:hover {
+    color: #77777788;
+}
+.mini-cont .tasks .bottom .last {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+    margin: 0px 0;
 }
