@@ -54,6 +54,39 @@ a {
     text-decoration: none;
     color: black;
 }
+.mini-cont .top h2 {
+    margin: 0;
+}
+.mini-cont .top p {
+    margin: 0;
+    margin-top: 10px;
+}
+@media (max-width:500px) {
+    .box {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .box .top {
+        justify-content: center !important;
+        padding-bottom: 30px !important;
+    }
+}
+@media (min-width:500px) and (max-width:1170px) {
+    .box {
+        flex-basis: 100%;
+    }
+}
+@media (min-width:1170px) and (max-width:1650px) {
+    .box {
+        flex-basis: calc(50% - 20px);
+    }
+}
+@media (min-width:1650px) {
+    .box {
+        flex-basis: 32%;
+    }
+}
+
 
 /* ----------------------------------- */
 
@@ -273,12 +306,6 @@ a {
     justify-content: space-between;
     padding: 10px 20px;
 }
-.mini-cont .welcome .top .txt h2 {
-    margin-bottom: 0;
-}
-.mini-cont .welcome .top .txt p {
-    margin-top: 10px;
-}
 .mini-cont .welcome .top img {
     width: 200px;
 }
@@ -326,14 +353,6 @@ a {
     font-size: 15px;
 }
 @media (max-width:500px) {
-    .welcome {
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .welcome .top {
-        justify-content: center !important;
-        padding-bottom: 30px !important;
-    }
     .welcome .top img {
         display: none;
     }
@@ -342,21 +361,6 @@ a {
     }
     .welcome .bottom .txt {
         flex-direction: column;
-    }
-}
-@media (min-width:500px) and (max-width:1170px) {
-    .welcome {
-        flex-basis: 100%;
-    }
-}
-@media (min-width:1170px) and (max-width:1650px) {
-    .welcome {
-        flex-basis: calc(50% - 20px);
-    }
-}
-@media (min-width:1650px) {
-    .welcome {
-        flex-basis: 32%;
     }
 }
 
@@ -374,13 +378,6 @@ a {
 }
 .mini-cont .draft .top {
     padding: 20px;
-}
-.mini-cont .draft .top h2 {
-    margin: 0;
-}
-.mini-cont .draft .top p {
-    margin: 0;
-    margin-top: 10px;
 }
 .mini-cont .draft form {
     display: flex;
@@ -419,29 +416,4 @@ a {
     padding: 5px 12px;
     border-radius: 6px;
     font-size: 15px;
-}
-@media (max-width:500px) {
-    .draft {
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .draft .top {
-        justify-content: center !important;
-        padding-bottom: 30px !important;
-    }
-}
-@media (min-width:500px) and (max-width:1170px) {
-    .draft {
-        flex-basis: 100%;
-    }
-}
-@media (min-width:1170px) and (max-width:1650px) {
-    .draft {
-        flex-basis: calc(50% - 20px);
-    }
-}
-@media (min-width:1650px) {
-    .draft {
-        flex-basis: 32%;
-    }
 }
