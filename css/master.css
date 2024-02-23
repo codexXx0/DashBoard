@@ -54,10 +54,18 @@ a {
     text-decoration: none;
     color: black;
 }
-.mini-cont .top h2 {
+.mini-cont .box {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mini-cont .box .top {
+    padding: 20px;
+}
+.mini-cont .box .top h2 {
     margin: 0;
 }
-.mini-cont .top p {
+.mini-cont .box .top p {
     margin: 0;
     margin-top: 10px;
 }
@@ -295,9 +303,6 @@ a {
 
 
 .mini-cont .welcome {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
     background-color: white;
 }
 .mini-cont .welcome .top {
@@ -371,13 +376,7 @@ a {
 /* Start Draft */
 
 .mini-cont .draft {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
     background-color: white;
-}
-.mini-cont .draft .top {
-    padding: 20px;
 }
 .mini-cont .draft form {
     display: flex;
@@ -416,4 +415,129 @@ a {
     padding: 5px 12px;
     border-radius: 6px;
     font-size: 15px;
+}
+
+
+/* ------------------------------------ */
+
+
+/* Start Year */
+
+
+.mini-cont .year {
+    background-color: white;
+}
+.mini-cont .year .bottom {
+    padding: 20px;
+}
+.year .bottom .target {
+    display: flex;
+    align-items: center;
+    gap: 20px ;
+    margin: 20px 0;
+    margin-top: 0;
+}
+.year .bottom .target .i {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #0077ff34;
+}
+.year .bottom .target i {
+    position: relative;
+    color: #0075FF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.year .bottom .target .prog {
+    flex: 1;
+}
+.year .bottom .target .prog h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 15px ;
+    color: rgba(0, 0, 0, 0.438);
+}
+.year .bottom .target .prog p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+.year .bottom .target .prog .bar {
+    position: relative;
+    height: 5px;
+    background-color: #699cd6a1;;
+}
+.year .bottom .target .prog .bar span {
+    position: relative;
+    display: block;
+    background-color: #0075FF;
+    height: 100%;
+}
+.year .bottom .target .prog .bar span::before {
+    position: absolute;
+    content: "80%" ;
+    color: white;
+    background-color: #0075FF;
+    padding: 5px;
+    font-size: small;
+    top: -40px;
+    right: -15px;
+    border-radius: 6px;
+}
+.year .bottom .target .prog .bar span::after {
+    position: absolute;
+    content: "" ;
+    background-color: #ffffff00;
+    top: -15px;
+    right: -3px;
+    width: 0;
+    border: 5px solid #0075FF;
+    border-bottom-color:transparent ;
+    border-left-color:transparent ;
+    border-right-color:transparent ;
+}
+.mini-cont .year .bottom .two .i {
+    background-color: #FDECCE;
+}
+.mini-cont .year .bottom .two i {
+    color: #F69E0B;
+}
+.year .bottom .two .prog .bar {
+    background-color: #FDECCE;
+}
+.year .bottom .two .prog .bar span {
+    background-color: #F69E0B;
+}
+.year .bottom .two .prog .bar span::before {
+    content: "55%";
+    background-color: #F69E0B;
+}
+.year .bottom .two .prog .bar span::after {
+    border: 5px solid #F69E0B;
+    border-bottom-color:transparent ;
+    border-left-color:transparent ;
+    border-right-color:transparent ;
+}
+.mini-cont .year .bottom .three .i {
+    background-color: #D3F3DF;
+}
+.mini-cont .year .bottom .three i {
+    color: #22C55E;
+}
+.year .bottom .three .prog .bar {
+    background-color: #D3F3DF;
+}
+.year .bottom .three .prog .bar span {
+    background-color: #22C55E;
+}
+.year .bottom .three .prog .bar span::before {
+    content: "75%";
+    background-color: #22C55E;
+}
+.year .bottom .three .prog .bar span::after {
+    border: 5px solid #22C55E;
+    border-bottom-color:transparent ;
+    border-left-color:transparent ;
+    border-right-color:transparent ;
 }
