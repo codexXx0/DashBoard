@@ -311,6 +311,9 @@ a {
     justify-content: space-between;
     padding: 10px 20px;
 }
+.mini-cont .welcome .top p {
+    margin-bottom: 10px;
+}
 .mini-cont .welcome .top img {
     width: 200px;
 }
@@ -381,7 +384,6 @@ a {
 .mini-cont .draft form {
     display: flex;
     flex-direction: column;
-    padding: 20px;
     padding-top: 0;
 }
 .mini-cont .draft form input {
@@ -391,6 +393,7 @@ a {
     background-color: #EEEEEE;
     padding: 10px 5px;
     font-size: small;
+    margin: 0 20px;
     margin-bottom: 20px;
 }
 .mini-cont .draft form textarea {
@@ -400,6 +403,7 @@ a {
     background-color: #EEEEEE;
     padding: 10px 5px;
     font-size: small;
+    margin: 0 20px;
 }
 .mini-cont .draft .footer {
     position: relative;
@@ -415,6 +419,7 @@ a {
     padding: 5px 12px;
     border-radius: 6px;
     font-size: 15px;
+    margin-top: 20px;
 }
 
 
