@@ -1125,3 +1125,114 @@ a {
 
 /* Start Social  */
 
+
+.table {
+    background-color: white;
+    box-sizing: border-box;
+    flex: 100%;
+}
+.table .bottom {
+    position: relative;
+    overflow-x: auto;
+    max-width: 100%;
+}
+.table .bottom table {
+    box-sizing: border-box;
+    border-spacing: 0;
+    padding: 20px;
+    padding-top: 0;
+    width: 100%;
+    min-width: 1000px;
+}
+.table .bottom table thead  {
+    background-color: #EEEEEE;
+    text-align: left;
+}
+.table table thead tr th {
+    padding: 15px 10px ;
+    font-size: 15px;
+}
+.table table tbody tr td {
+    padding: 20px 15px ;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid #EEEEEE;
+    margin: 0;
+}
+.table table tbody tr td:nth-child(5) {
+    min-width: 90px;
+}
+.table table tbody tr td img {
+    max-width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translatey(-50%);
+    border: 2px solid rgb(255, 255, 255);
+}
+.table table tbody tr td img:nth-child(1) {
+    z-index: 0;
+}
+.table table tbody tr td img:nth-child(2) {
+    z-index: 1;
+    left: 25px;
+}
+.table table tbody tr td img:nth-child(3) {
+    z-index: 2;
+    left: 40px;
+}
+.table table tbody tr td img:nth-child(4) {
+    z-index: 3;
+    left: 55px;
+}
+.table .bottom table tbody tr td:nth-child(6) {
+    text-align: center;
+    min-width: 120px;
+}
+.table .bottom table tbody tr td:nth-child(6) span {
+    color: white;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.table .bottom table tbody tr:nth-child(1) td:nth-child(6) span {
+    background-color: #F59E0B;
+}
+.table .bottom table tbody tr:nth-child(2) td:nth-child(6) span {
+    background-color: #0075FF;
+}
+.table .bottom table tbody tr:nth-child(3) td:nth-child(6) span {
+    background-color: #22C55E;
+}
+.table .bottom table tbody tr:nth-child(4) td:nth-child(6) span {
+    background-color: #22C55E;
+}
+.table .bottom table tbody tr:nth-child(5) td:nth-child(6) span {
+    background-color: #F44336;
+}
+.table .bottom table tbody tr:nth-child(6) td:nth-child(6) span {
+    background-color: #22C55E;
+}
+@media (min-width:765px) and (max-width:1230px) {
+    .table {
+        background-color: white;
+        box-sizing: border-box;
+        flex: 100%;
+    }
+    .table .bottom {
+        position: relative;
+        overflow-x: auto;
+        /* max-width: 100%; */
+    }
+    .table .bottom table {
+        box-sizing: border-box;
+        border-spacing: 0;
+        padding: 20px;
+        padding-top: 0;
+        width: 100%;
+        min-width: 800px;
+    }
+}
