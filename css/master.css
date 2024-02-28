@@ -1223,27 +1223,6 @@ a {
 .table .bottom table tbody tr:nth-child(6) td:nth-child(6) span {
     background-color: #22C55E;
 }
-/* @media (min-width:765px) and (max-width:1230px) {
-    .table {
-        background-color: white;
-        box-sizing: border-box;
-        flex: 0.5;
-    }
-    .table .bottom {
-        position: relative;
-        overflow-x: auto;
-        overflow: hidden;
-        max-width: 100%;
-    }
-    .table .bottom table {
-        box-sizing: border-box;
-        border-spacing: 0;
-        padding: 20px;
-        padding-top: 0;
-        width: 90%;
-        min-width: 00px;
-    }
-} */
 @media (min-width:1170px) and (max-width:1650px) {
     .table {
         flex-basis: calc(100% - 20px);
