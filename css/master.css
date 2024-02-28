@@ -7,6 +7,12 @@ body {
     box-sizing: border-box;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0075FF;
+}
 :root {
     --main-bgc: white ;
     --txt-bgc: #EEEEEE ;
@@ -16,6 +22,7 @@ body {
     position: relative;
     flex: 1;
     max-width: calc(100% - 75px);
+    background-color: #F1F5F9;
 }
 .mini-cont {
     position: relative;
@@ -1129,12 +1136,12 @@ a {
 .table {
     background-color: white;
     box-sizing: border-box;
-    flex: 100%;
+    width: 100px;
 }
 .table .bottom {
-    position: relative;
     overflow-x: auto;
-    max-width: 100%;
+    margin: 20px;
+    margin-top: 0;
 }
 .table .bottom table {
     box-sizing: border-box;
@@ -1216,23 +1223,29 @@ a {
 .table .bottom table tbody tr:nth-child(6) td:nth-child(6) span {
     background-color: #22C55E;
 }
-@media (min-width:765px) and (max-width:1230px) {
+/* @media (min-width:765px) and (max-width:1230px) {
     .table {
         background-color: white;
         box-sizing: border-box;
-        flex: 100%;
+        flex: 0.5;
     }
     .table .bottom {
         position: relative;
         overflow-x: auto;
-        /* max-width: 100%; */
+        overflow: hidden;
+        max-width: 100%;
     }
     .table .bottom table {
         box-sizing: border-box;
         border-spacing: 0;
         padding: 20px;
         padding-top: 0;
-        width: 100%;
-        min-width: 800px;
+        width: 90%;
+        min-width: 00px;
+    }
+} */
+@media (min-width:1170px) and (max-width:1650px) {
+    .table {
+        flex-basis: calc(100% - 20px);
     }
 }
