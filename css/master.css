@@ -1130,7 +1130,7 @@ a {
 /* ------------------------------------ */
 
 
-/* Start Social  */
+/* Start Table  */
 
 
 .table {
@@ -1227,4 +1227,216 @@ a {
     .table {
         flex-basis: calc(100% - 20px);
     }
+}
+
+
+
+
+
+/* Start Settings Page  */
+
+
+
+
+.container .Set {
+    align-content: flex-start;
+}
+
+
+
+
+/* Start control */
+
+.container .Set .control {
+    background-color: white;
+}
+.control .mid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    margin-top: 0;
+}
+.control .mid .txt .one {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.control .mid .txt .two {
+    font-size: 13px;
+    color: #777;
+}
+.control .bottom {
+    margin: 20px;
+}
+.control .bottom textarea {
+    width: calc(100% - 20px);
+    height: 150px;
+    resize: none;
+    border-radius: 6px;
+    border-color:#cccccc ;
+    outline: none;
+    padding: 8px;
+}
+.control .bottom textarea::placeholder {
+    font-size: 14px;
+}
+
+
+
+
+/* Start info */
+
+
+.container .mini-cont>.info {
+    background-color: white;
+}
+.mini-cont>.info .top p {
+    font-size: 13px;
+    color: #929292;
+    margin-bottom: 10px;
+} 
+.container .mini-cont>.info .bottom {
+    margin: 20px;
+    margin-top: 0px;
+}
+.mini-cont>.info .bottom form h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 15px ;
+}
+.mini-cont>.info .bottom input {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #c7c7c7 ;
+    padding: 5px 8px;
+}
+.mini-cont>.info .bottom input::placeholder {
+    font-size: 12px ;
+    color: #929292;
+}
+.mini-cont>.info .bottom form .cell:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mini-cont>.info .bottom form .cell:nth-child(3) .spec {
+    flex: 1;
+    margin-right: 20px;
+}
+.mini-cont>.info .bottom form .cell:nth-child(3) input {
+    background-color: #F0F4F8;
+    cursor: not-allowed;
+}
+.mini-cont>.info .bottom form .cell:nth-child(3) span {
+    color: #0075FF;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    top: 3px;
+}
+
+
+
+/* Start Security */
+
+.mini-cont>.security {
+    background-color: white;
+}
+.mini-cont>.security .top p {
+    font-size: 13px;
+    color: #929292;
+    margin-bottom: 10px;
+}
+.mini-cont>.security .bottom {
+    margin: 20px;
+}
+.mini-cont>.security .bottom .cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 20px;
+}
+.mini-cont>.security .bottom .cell:nth-child(3) {
+    border: none;
+}
+.mini-cont>.security .bottom h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.mini-cont>.security .bottom .cell .txt div{
+    color: #929292;
+    font-size: 14px;
+}
+.mini-cont>.security .bottom .state span {
+    padding: 8px 15px;
+    background-color: #0075FF;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.mini-cont>.security .bottom .cell:nth-child(3) .state span {
+    background-color: #EEEEEE;
+    color: black;
+} 
+
+
+
+/* Start Social */
+
+
+.mini-cont>.Socialinf {
+    background-color: white;
+}
+.mini-cont>.Socialinf .top p {
+    font-size: 13px;
+    color: #929292;
+    margin-bottom: 10px;
+}
+.mini-cont>.Socialinf .bottom {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.mini-cont>.Socialinf .bottom form .cell {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #d1d1d1;
+    background-color: #F6F6F6;
+}
+
+.mini-cont>.Socialinf .bottom form .cell .i {
+    position: relative;
+    width: 30px;
+    height: 35px;
+    border-right: 1px solid #d6d6d6;
+}
+.mini-cont>.Socialinf .bottom form .cell i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    color: #adadad;
+    transition: 0.3s ease;
+}
+.mini-cont>.Socialinf .bottom form .cell input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #F6F6F6;
+    padding: 5px;
+}
+.mini-cont>.Socialinf .bottom form .cell input::placeholder {
+    font-size: 12px;
+}
+.mini-cont>.Socialinf .bottom form .cell:hover i {
+    color: black;
 }
