@@ -1488,3 +1488,37 @@ a {
         max-width: 75%;
     }
 }
+
+
+/* ----------------------------- */
+
+
+
+/*  Start Widgts  */
+
+
+.mini-cont>.wid {
+    background-color: white;
+}
+.mini-cont>.wid .top p {
+    font-size: 13px;
+    color: #929292;
+    margin-bottom: 10px;
+}
+.mini-cont>.wid .bottom {
+    margin: 20px;
+    margin-top: 0;
+    text-align: left;
+}
+.mini-cont>.wid .bottom ul li {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.mini-cont>.wid .bottom ul li input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.mini-cont>.wid .bottom ul li label {
+    cursor: pointer;
+    font-size: 15px;
+}
