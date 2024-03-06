@@ -1265,6 +1265,7 @@ a {
 .control .mid .txt .one {
     font-size: 16px;
     margin-bottom: 5px;
+    font-weight: 600;
 }
 .control .mid .txt .two {
     font-size: 13px;
