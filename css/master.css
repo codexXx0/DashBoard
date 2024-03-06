@@ -1522,3 +1522,71 @@ a {
     cursor: pointer;
     font-size: 15px;
 }
+
+
+/* ----------------------------- */
+
+
+
+/*  Start Manager  */
+
+
+.mini-cont>.backmang {
+    background-color: white;
+}
+.mini-cont>.backmang .top p {
+    font-size: 13px;
+    color: #929292;
+    margin-bottom: 0px;
+}
+.mini-cont>.backmang .mid {
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.mini-cont>.backmang .mid ul li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.mini-cont>.backmang .mid ul li input {
+    margin:  0 5px;
+}
+.mini-cont>.backmang .bottom {
+    text-align: center;
+    border-top: 1px #d6d6d6bd solid;
+    padding-top: 30px;
+}
+.mini-cont>.backmang .bottom ul {
+    margin: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.mini-cont>.backmang .bottom ul li {
+    padding: 15px ;
+    border: 1px solid #d6d6d6bd;
+    border-radius: 6px;
+    flex-basis: 25% ;
+    transition: 0.3s ease;
+}
+.mini-cont>.backmang .bottom ul li i {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.mini-cont>.backmang .bottom ul li div {
+    font-size: 14px;
+}
+.mini-cont>.backmang .bottom ul li:hover {
+    color: #0075FF;
+    border: 1px solid #0075FF;
+
+}
+@media (max-width:500px ) {
+    .mini-cont>.backmang .bottom ul li {
+        flex-basis: 100% ;
+    }
+}
