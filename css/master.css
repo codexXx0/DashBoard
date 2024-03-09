@@ -102,6 +102,56 @@ a {
     }
 }
 
+.customecheck label {
+    cursor: pointer;
+}
+.customecheck input[type=checkbox]{
+    appearance: none;
+    position: relative;
+    margin: 0 10px;
+    margin-right: 0;
+    width: 70px;
+    padding:3px ;
+    background-color: #ddd;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.customecheck input[type=checkbox]::before {
+    content: "\f00d";
+    font-family: fontawesome;
+    display: inline-block;
+    background-color: #ffffff;
+    padding:2px 5px;
+    margin: 2px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.customecheck input[type=checkbox]::after {
+    content: "\f00c";
+    font-family: fontawesome;
+    opacity: 0;
+    display: inline-block;
+    transform: translateX(-28px);
+    background-color: #ffffff;
+    padding:2px 5px;
+    margin: 2px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.customecheck input[type=checkbox]:checked {
+    background-color: #0075FF;
+}
+.customecheck input[type=checkbox]:checked:before {
+    transform: translateX(40px);
+    opacity: 0;
+}
+.customecheck input[type=checkbox]:checked::after {
+    opacity: 1;
+    transform: translateX(11px);
+}
 
 /* ----------------------------------- */
 
@@ -1552,7 +1602,12 @@ a {
     cursor: pointer;
 }
 .mini-cont>.backmang .mid ul li input {
-    margin:  0 5px;
+    cursor: pointer;
+    transform: translateY(1px);
+}
+.mini-cont>.backmang .mid ul li label {
+    cursor: pointer;
+
 }
 .mini-cont>.backmang .bottom {
     text-align: center;
@@ -1568,23 +1623,43 @@ a {
     gap: 10px;
 }
 .mini-cont>.backmang .bottom ul li {
+    flex-basis: 31% ;
+}
+.mini-cont>.backmang .bottom ul li input[type=radio] {
+    appearance: none;
+    position: relative;
     padding: 15px ;
     border: 1px solid #d6d6d6bd;
     border-radius: 6px;
-    flex-basis: 25% ;
     transition: 0.3s ease;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
 }
-.mini-cont>.backmang .bottom ul li i {
-    margin-bottom: 5px;
+.mini-cont>.backmang .bottom ul li input[type=radio]::before {
+    content: "\f233";
+    font-family: fontawesome;
+    display: block;
+}
+.mini-cont>.backmang .bottom ul li input[type=radio]::after {
+    content: "Megaman";
+    display: block;
+    margin-top: 6px;
     font-size: 14px;
 }
-.mini-cont>.backmang .bottom ul li div {
+.mini-cont>.backmang .bottom ul li:nth-child(2) input[type=radio]::after {
+    content: "Zero";
+    display: block;
     font-size: 14px;
 }
-.mini-cont>.backmang .bottom ul li:hover {
+.mini-cont>.backmang .bottom ul li:nth-child(3) input[type=radio]::after {
+    content: "Segma";
+    display: block;
+    font-size: 14px;
+}
+.mini-cont>.backmang .bottom ul li input[type=radio]:checked {
     color: #0075FF;
-    border: 1px solid #0075FF;
-
+    border-color: #0075FF;
 }
 @media (max-width:500px ) {
     .mini-cont>.backmang .bottom ul li {
