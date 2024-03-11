@@ -23,6 +23,7 @@ body {
     flex: 1;
     max-width: calc(100% - 75px);
     background-color: #F1F5F9;
+    min-height: 100vh;
 }
 .mini-cont {
     position: relative;
