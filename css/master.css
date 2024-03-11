@@ -72,9 +72,11 @@ a {
 .mini-cont .box .top h2 {
     margin: 0;
 }
-.mini-cont .box .top p {
+.mini-cont>.box>.top>p {
     margin: 0;
     margin-top: 10px;
+    font-size: 14px;
+    color: #adadad;
 }
 @media (max-width:500px) {
     .box {
@@ -1796,5 +1798,103 @@ a {
 @media (min-width:500px ) and (max-width:768px) {
     .mini-cont>.main .bottom ul li .bottom div {
         flex-basis: 48%;
+    }
+}
+
+
+/* --------------------------------- */
+
+
+/* Start Skills */
+
+
+.mini-cont>.skills {
+    background-color: white;
+    flex-basis: 40%;
+}
+.mini-cont>.skills .bottom {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.mini-cont>.skills .bottom ul {
+    margin-top: 20px;
+}
+.mini-cont>.skills .bottom ul li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.mini-cont>.skills .bottom ul li:nth-child(7) {
+    border: none;
+}
+.mini-cont>.skills .bottom ul li div {
+    background-color: #e2e2e2;
+    padding: 5px 10px;
+    border-radius: 7px;
+}
+@media (max-width:750px) {
+    .mini-cont>.skills {
+        background-color: white;
+        flex-basis: 100%;
+    }
+}
+
+
+/* --------------------------------- */
+
+
+/* Start Skills */
+
+
+.mini-cont>.active {
+    background-color: white;
+    flex-basis: 56% ;
+}
+.mini-cont>.active .bottom {
+    margin: 0 20px;
+}
+.mini-cont>.active .bottom ul {
+    margin-top: 20px;
+}
+.mini-cont>.active .bottom ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.mini-cont>.active .bottom ul li:nth-child(4) {
+    border-bottom: none;
+}
+.mini-cont>.active .bottom ul li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+.mini-cont>.active .bottom ul li .txt {
+    flex: 1;
+}
+.mini-cont>.active .bottom ul li .txt h5 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.mini-cont>.active .bottom ul li .txt p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+.mini-cont>.active .bottom ul li .time {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+@media (max-width:750px) {
+    .mini-cont>.active {
+        background-color: white;
+        flex-basis: 100%;
     }
 }
