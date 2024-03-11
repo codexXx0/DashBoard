@@ -1691,10 +1691,9 @@ a {
 
 
 
-
-
-
 /* Start Profile Page  */
+
+
 
 
 
@@ -1915,5 +1914,161 @@ a {
     .mini-cont>.active {
         background-color: white;
         flex-basis: 100%;
+    }
+}
+
+
+
+
+
+/* Start Projects Page  */
+
+
+
+
+/* Start Projects*/
+
+.mini-cont>.projects {
+    background-color: white;
+    padding: 20px;
+    align-self: flex-start;
+    flex-basis: 30%;
+}
+.mini-cont>.projects .top {
+    padding: 0;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.mini-cont>.projects .top .txt h2 {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 0;
+}
+.mini-cont>.projects .top .txt p {
+    font-size: 14px;
+    color: #b4b4b4;
+    margin-top: 10px;
+}
+.mini-cont>.projects .mid1 {
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.mini-cont>.projects .mid1 img {
+    width: 35px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.mini-cont>.projects .mid1 img:nth-child(2) {
+    transform: translateX(-15px);
+}
+.mini-cont>.projects .mid1 img:nth-child(3) {
+    transform: translateX(-30px);
+}
+.mini-cont>.projects .mid1 img:nth-child(4) {
+    transform: translateX(-45px);
+}
+.mini-cont>.projects .mid1 img:nth-child(5) {
+    transform: translateX(-60px);
+}
+.mini-cont>.projects .mid1 img:hover {
+    z-index: 10;
+}
+.mini-cont>.projects .mid2 {
+    overflow-x: auto;
+}
+.mini-cont>.projects .mid2 ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    column-gap: 10px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9e9e9;
+    min-width: 150px;
+}
+.mini-cont>.projects .mid2 ul li {
+    background-color: #ebebeb;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.mini-cont>.projects .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #6e6e6e;
+    margin-top: 20px;
+}
+.mini-cont>.projects .bottom .prog {
+    position: relative;
+    width: 250px;
+    min-width: 100px;
+    height: 7px;
+    display: block;
+    background-color: #d8d8d8;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.mini-cont>.projects .bottom .prog span {
+    display: block;
+    height: 7px;
+    width: 60%;
+    background-color: red;
+    border-radius: 10px;
+}
+.mini-cont>.projects:nth-child(3) .bottom .prog span {
+    background-color: #22C55E;
+}
+.mini-cont>.projects:nth-child(4) .bottom .prog span {
+    background-color: #0075FF;
+    width: 100%;
+}
+.mini-cont>.projects:nth-child(5) .bottom .prog span {
+    background-color: #22C55E;
+    width: 50%;
+}
+.mini-cont>.projects:nth-child(6) .bottom .prog span {
+    background-color: #22C55E;
+    width: 80%;
+}
+.mini-cont>.projects:nth-child(7) .bottom .prog span {
+    width: 40%;
+}
+.mini-cont>.projects:nth-child(8) .bottom .prog span {
+    background-color: #22C55E;
+    width: 70%;
+}
+.mini-cont>.projects:nth-child(9) .bottom .prog span {
+    background-color: #22C55E;
+    width: 70%;
+}
+.mini-cont>.projects:nth-child(10) .bottom .prog span {
+    background-color: #22C55E;
+    width: 90%;
+}
+@media (max-width:500px) {
+    .mini-cont>.projects {
+        text-align: left;
+        flex-basis:100% ;
+    }
+}
+@media (min-width:500px) and (max-width:768px) {
+    .mini-cont>.projects {
+        text-align: left;
+        flex-basis:100% ;
+    }
+}
+@media (min-width:768px) and (max-width:1600px) {
+    .mini-cont>.projects {
+        text-align: left;
+        flex-basis:41% ;
+    }
+}
+@media (min-width:1600px)  {
+    .mini-cont>.projects {
+        text-align: left;
+        flex-basis:30% ;
     }
 }
