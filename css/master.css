@@ -1193,6 +1193,7 @@ a {
     flex-basis: calc(100% - 20px);
 }
 .table .bottom {
+    max-width: 99%;
     overflow-x: auto;
     margin: 20px;
     margin-top: 0;
@@ -1212,6 +1213,12 @@ a {
 .table table thead tr th {
     padding: 15px 10px ;
     font-size: 15px;
+}
+.table table tbody tr{
+    transition: 0.3s ease;
+}
+.table table tbody tr:hover {
+    background-color: #f1f1f17c;
 }
 .table table tbody tr td {
     padding: 20px 15px ;
@@ -1276,6 +1283,17 @@ a {
 }
 .table .bottom table tbody tr:nth-child(6) td:nth-child(6) span {
     background-color: #22C55E;
+}
+@media (min-width:767px) and (max-width:1170px){
+    /* .table {
+        background-color: white;
+        box-sizing: border-box;
+        width: 0%;
+        flex-basis: calc(100% - 20px);
+    }
+    .table .bottom table  {
+        width: 100px !important;
+    } */
 }
 @media (min-width:1170px) and (max-width:1650px) {
     .table {
