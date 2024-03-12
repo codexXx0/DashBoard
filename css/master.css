@@ -66,6 +66,7 @@ a {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
 }
 .mini-cont .box .top {
     padding: 20px;
@@ -2070,5 +2071,115 @@ a {
     .mini-cont>.projects {
         text-align: left;
         flex-basis:30% ;
+    }
+}
+
+
+
+
+
+/* Start Cources Page  */
+
+
+
+
+/* Start Cources*/
+
+.mini-cont>.cource {
+    overflow: hidden;
+    align-self: flex-start;
+    flex-basis: 19%;
+    padding-bottom: 0px !important;
+}
+.mini-cont>.cource .top {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.mini-cont>.cource .top img:nth-child(1) {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    z-index: 0;
+}
+.mini-cont>.cource .top img:nth-child(2) {
+    position: absolute;
+    max-width: 60px;
+    min-width: 40px;
+    border-radius: 50%;
+    left: 20px;
+    top: 20px;
+    border: 2px solid white;
+}
+.mini-cont>.cource .mid {
+    position: relative;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    max-height: 150px;
+    min-height: 120px;
+}
+.mini-cont>.cource .mid::before {
+    content: "Course Info";
+    position: absolute;
+    background-color: #0075FF;
+    color: white;
+    font-size: 13px;
+    bottom: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+.mini-cont>.cource h3 {
+    margin-bottom: 10px;
+}
+.mini-cont>.cource p {
+    color: #6e6e6e;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.mini-cont>.cource .bottom {
+    padding: 15px;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #6e6e6eb9;
+}
+@media (max-width:500px) {
+    .mini-cont>.cource {
+        flex-basis: 100%;
+        padding-bottom: 0px !important;
+    }
+}
+@media (min-width:500px) and (max-width:1100px) {
+    .mini-cont>.cource {
+        flex-basis: 47%;
+        padding-bottom: 0px !important;
+    }
+}
+@media (min-width:1100px) and (max-width:1400px) {
+    .mini-cont>.cource {
+        flex-basis: 31%;
+        padding-bottom: 0px !important;
+    }
+}
+@media (min-width:1400px) and (max-width:1600px) {
+    .mini-cont>.cource {
+        flex-basis: 23%;
+        padding-bottom: 0px !important;
+    }
+}
+@media (min-width:1600px) {
+    .mini-cont>.cource {
+        flex-basis: 18%;
+        padding-bottom: 0px !important;
     }
 }
