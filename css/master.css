@@ -2213,7 +2213,6 @@ a {
     font-size: 13PX;
 }
 .mini-cont>.friends .top .i i:nth-child(1){
-    left: 0;
     background-color: #e2e2e2;
     color: #6e6e6e;
     padding: 10px;
@@ -2221,8 +2220,6 @@ a {
     transition: 0.3s ease;
 }
 .mini-cont>.friends .top .i i:nth-child(2){
-    left: 40px;
-    top: 0px;
     background-color: #e2e2e2;
     color: #6e6e6e;
     padding: 10px;
@@ -2309,6 +2306,11 @@ a {
     }
     .mini-cont>.friends .top img {
         width: 80px;
+    }
+    .mini-cont>.friends .top .i {
+        position: absolute;
+        font-size: 11PX;
+        left: -10px;
     }
 }
 @media (min-width:500px) and (max-width:930px) {
