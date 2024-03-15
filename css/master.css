@@ -29,6 +29,7 @@ body {
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    align-content: flex-start;
     flex-wrap: wrap;
     margin: 20px;
     height: calc(100% - 110px);
@@ -2561,4 +2562,114 @@ a {
     .mini-cont>.left .file  {
         flex-basis:calc(15% - 20px) ;
     }
+}
+
+
+
+
+
+/* Start Plans Page  */
+
+
+
+
+/* Start Plans */
+
+
+
+.mini-cont>.plan:nth-child(2) .top {
+    text-align: center;
+    background-color: #22C55E;
+    color: white;
+    margin: 20px;
+    border-radius: 0px;
+    border: 4px solid white;
+    outline: 4px solid #22C55E;
+}
+.mini-cont>.plan:nth-child(3) .top {
+    text-align: center;
+    background-color: #0075FF;
+    color: white;
+    margin: 20px;
+    border-radius: 0px;
+    border: 4px solid white;
+    outline: 4px solid #0075FF;
+}
+.mini-cont>.plan:nth-child(4) .top {
+    text-align: center;
+    background-color: #F59E0B;
+    color: white;
+    margin: 20px;
+    border-radius: 0px;
+    border: 4px solid white;
+    outline: 4px solid #F59E0B;
+}
+.mini-cont>.plan .top h3 {
+    font-size: 25px;
+    margin: 10px;
+}
+.mini-cont>.plan .top p {
+    font-size: 40px;
+    color: white;
+}
+.mini-cont>.plan .bottom {
+    margin: 20px;
+    padding-top: 20px;
+}
+.mini-cont>.plan .bottom ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.mini-cont>.plan .bottom ul li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dddddd8a;
+}
+.mini-cont>.plan .bottom ul li i:nth-child(1) {
+    font-size: 15px;
+    margin-right: 10px;
+    color: #22C55E;
+}
+.mini-cont>.plan .bottom ul li .red:nth-child(1) {
+    font-size: 15px;
+    margin-right: 10px;
+    color: #d43125;
+}
+.mini-cont>.plan .bottom ul li i:nth-child(3) {
+    font-size: 15px;
+    color: #8b8b8b;
+    cursor: pointer;
+}
+.mini-cont>.plan .bottom ul li div {
+    flex: 1;
+    font-size: 15px;
+}
+.mini-cont>.plan:nth-child(2) .bottom .button {
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: #22C55E;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mini-cont>.plan:nth-child(3) .bottom .button {
+    width: fit-content;
+    padding: 5px 15px;
+    background-color: #0075FF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.mini-cont>.plan:nth-child(4) .bottom .button {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: #8b8b8b;
+    cursor: pointer;
 }
