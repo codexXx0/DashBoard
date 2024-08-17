@@ -17,7 +17,7 @@ signUpBtn.onclick = function() {
             `
         )
         signDiv.innerHTML = `
-            <a href="login.html">
+            <a href="index.html">
                 <button class="formButton" id="signUp" >Sign Up</button>
             </a>
         `

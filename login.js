@@ -14,7 +14,7 @@ signInBtn.onclick = (e) => {
         alert("Please check your information and try again!");
     } else if (foundUser) {
         alert("Welcome Back <3");
-        window.location.href = "index.html"; // Redirect to the homepage
+        window.location.href = "dashboard.html"; // Redirect to the homepage
     } else {
         alert("Incorrect email or password!");
     }
