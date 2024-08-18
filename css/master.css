@@ -357,6 +357,15 @@ a {
     border-radius: 50%;
 }
 
+.header .logout {
+    color: white;
+    background-color: #0066ff;
+    padding: 8px 13px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: small;
+    cursor: pointer;
+}
 
 /* ------------------------------------ */
 

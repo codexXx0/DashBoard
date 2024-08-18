@@ -11,12 +11,15 @@ signInBtn.onclick = (e) => {
     let foundUser = storedUsers.find(user => user.email === emailField.value && user.password === passwordField.value);
     
     if (!emailField.value || !passwordField.value) {
-        alert("Please check your information and try again!");
+        swal("Watch Out!", "Please Fill In All Required Fields!", "error");
     } else if (foundUser) {
-        alert("Welcome Back <3");
-        window.location.href = "dashboard.html"; // Redirect to the homepage
+        swal("Welcome Back <3").then(() => {
+            setTimeout(() => {
+                window.location.href = "dashboard.html"; // Redirect after delay
+            }, 100);  // 2-second delay
+        });
     } else {
-        alert("Incorrect email or password!");
+        swal("Incorrect email or password!" , "Error");
     }
 };
 

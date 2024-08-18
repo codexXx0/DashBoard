@@ -10,13 +10,8 @@ let eyeIcon = document.getElementById("eyeIcon")
 
 signUpBtn.onclick = function() {
     if ( fullName.value.length === 0 || email.value.length === 0 || passWord.value.length === 0 ) {
-        alert("Please Fill In All Required Fields");
+        swal("Watch Out!", "Please Fill In All Required Fields!", "error");
     } else {
-        alert(
-            `Welcome ${fullName.value}
-            Please Login to access your account <3
-            `
-        )
         signDiv.innerHTML = `
             <a href="index.html">
                 <button class="formButton" id="signUp" >Sign Up</button>
