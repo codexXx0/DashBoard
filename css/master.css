@@ -2764,6 +2764,11 @@ a {
     padding: 8px 15px;
 }
 
+.passicon {
+    display: flex;
+    align-items: center;
+}
+
 .form-section {
     padding: 18px;
     font-size: .85rem;
@@ -2885,6 +2890,14 @@ a {
     position: absolute;
     z-index: 99;
     left: 12px;
+    bottom: 9px;
+}
+
+.icon1 {
+    width: 20px;
+    position: absolute;
+    z-index: 99;
+    right: 12px;
     bottom: 9px;
 }
 

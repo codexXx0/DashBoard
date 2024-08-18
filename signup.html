@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="imgs/login.png">
     <title>Sign Up</title>
 </head>
@@ -19,7 +20,10 @@
                 <div class="form-container">
                     <input type="text" required id="fullName" class="input" placeholder="Full Name">
                     <input type="email" required id="email" class="input" placeholder="Email">
-                    <input type="password" required  id="password" class="input" placeholder="Password">
+                    <div class="passicon">
+                        <input type="password" required  id="password" class="input" placeholder="Password">
+                        <i class="fa-regular fa-eye-slash passicon1 " id="eyeIcon" style="cursor: pointer;" ></i>
+                    </div>
                 </div>
                 <div class="signbtn">
                     <a href="index.html">

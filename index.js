@@ -5,6 +5,7 @@ let signUpBtn = document.getElementById("signUp");
 let signUpData = JSON.parse(localStorage.getItem("users")) || [];
 let signDiv = document.querySelector(".signbtn")
 let welcomeBox = document.getElementById("welcomeBox")
+let eyeIcon = document.getElementById("eyeIcon")
 
 
 signUpBtn.onclick = function() {
@@ -23,9 +24,20 @@ signUpBtn.onclick = function() {
         `
         signUpData.push({ fullName: fullName.value, email: email.value, password: passWord.value });
         localStorage.setItem("users", JSON.stringify(signUpData));
-        console.log(signUpData);
         fullName.value = "";
         email.value = "";
         passWord.value = "";
     }
 }
+
+eyeIcon.addEventListener("click" , function(){
+
+    if (eyeIcon.classList.contains("fa-eye-slash")) {
+        eyeIcon.classList.replace("fa-eye-slash" , "fa-eye")
+        passWord.type= "text"
+    } else {
+        eyeIcon.classList.replace("fa-eye" , "fa-eye-slash")
+        passWord.type= "password"
+    }
+
+})
